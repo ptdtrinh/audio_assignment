@@ -2,9 +2,9 @@
 # Audio Generation Mixture sound of flute & violin
 This repo currently support:
 
-(1) Generate audio by simple mixture of flute and violin using audio data: dummy_mixture.ipynb
-(2) Audio-to-Audio Generation (AudioLDM): Given an audio, generate another audio that contain the same type of sound.
-(3) Audio-to-Audio Generation (ComMU): generate audio by using only metadata.
+* (1) Generate audio by simple mixture of flute and violin using audio data: dummy_mixture.ipynb
+* (2) Audio-to-Audio Generation (AudioLDM): Given an audio, generate another audio that contain the same type of sound.
+* (3) Audio-to-Audio Generation (ComMU): generate audio by using only metadata.
 
 ## Docker and env settings
 # docker
