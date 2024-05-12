@@ -7,7 +7,6 @@ This repo currently support:
 * (3) Audio-to-Audio Generation (ComMU): generate audio by using only metadata.
 
 ## Docker and env settings
-# docker
 ```shell
 $ docker run -it \
 --shm-size 200G \
@@ -49,6 +48,8 @@ $ python3 generate.py \
 --rhythm standard \
 --chord_progression Am-Am-Am-Am-Am-Am-Am-Am-G-G-G-G-G-G-G-G-F-F-F-F-F-F-F-F-E-E-E-E-E-E-E-E-Am-Am-Am-Am-Am-Am-Am-Am-G-G-G-G-G-G-G-G-F-F-F-F-F-F-F-F-E-E-E-E-E-E-E-E \
 --num_generate 3
+
+$ Currently the code in this section has error during generation process. Detail of error is mentioned in the report. I will update and fix it soon!
 ```
 
-Currently the code in this section has error during generation process. Detail of error is mentioned in the report. I will update and fix it soon!
+
