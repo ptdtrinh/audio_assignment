@@ -1,5 +1,5 @@
-### audio_assignment
-Audio Generation Mixture sound of flute & violin
+
+# Audio Generation Mixture sound of flute & violin
 This repo currently support:
 
 (1) Generate audio by simple mixture of flute and violin using audio data: dummy_mixture.ipynb
@@ -8,6 +8,7 @@ This repo currently support:
 
 ## Docker and env settings
 # docker
+```shell
 $ docker run -it \
 --shm-size 200G \
 --runtime=nvidia \
@@ -18,17 +19,20 @@ pytorch/pytorch:1.10.0-cuda11.3-cudnn8-devel
 $ conda create -n audioldm python=3.8
 $ pip3 install audioldm
 
-/go/to/path/ComMU-code
+$ /go/to/path/ComMU-code
 $ pip install -r requirements.txt
-
+```
 ## Usage
 (*) To generate audio by AudioLDM
-/go/to/path/AudioLDM
-audioldm --file_path simple_flute.wav
-audioldm --file_path simple_violin.wav
+```shell
+$ /go/to/path/AudioLDM
+$ audioldm --file_path simple_flute.wav
+$ audioldm --file_path simple_violin.wav
+```
 
 (*) To generate audio by ComMU 
-/go/to/path/ComMU-code
+```shell
+$ /go/to/path/ComMU-code
 $ python3 generate.py \
 --checkpoint_dir {./working_directory/checkpoint_best.pt} \
 --output_dir {./output_dir} \
@@ -45,5 +49,6 @@ $ python3 generate.py \
 --rhythm standard \
 --chord_progression Am-Am-Am-Am-Am-Am-Am-Am-G-G-G-G-G-G-G-G-F-F-F-F-F-F-F-F-E-E-E-E-E-E-E-E-Am-Am-Am-Am-Am-Am-Am-Am-G-G-G-G-G-G-G-G-F-F-F-F-F-F-F-F-E-E-E-E-E-E-E-E \
 --num_generate 3
+```
 
 Currently the code in this section has error during generation process. Detail of error is mentioned in the report. I will update and fix it soon!
